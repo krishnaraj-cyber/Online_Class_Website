@@ -28,13 +28,14 @@
                                 <li><a href=""><img  src="images/icons8-search-24.png" alt=""></a></li>
                                 <li><a href=""><img src="images/icons8-cart-24.png"></a></li>
                                 <a class="searchcart" href="">Login/Register</a>
-                                <div class="menu">
-                                        <div class="menuline"></div>
-                                        <div class="menuline"></div>
-                                        <div class="menuline"></div>
-                                </div>
+                               
 
                         </ul>
+                        <div class="menu">
+                                <div class="menuline"></div>
+                                <div class="menuline"></div>
+                                <div class="menuline"></div>
+                        </div>
 
 
                 </nav>
@@ -614,5 +615,13 @@
 
 
 </body>
+
+<script>
+        const menu = document.querySelector('.menu')
+        const menuList = document.querySelector('nav ul')
+        menu.addEventListener('click',()=>{
+                menuList.classList.toggle('showmenu')
+        })
+</script>
 
 </html>
