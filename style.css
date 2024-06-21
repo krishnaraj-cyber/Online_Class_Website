@@ -1,0 +1,108 @@
+.header{
+    background-color:rgba(88, 87, 87, 0.623) ;
+}
+
+.fortitle{
+    text-align: center;
+    margin-top: 0mm;
+    background-color:rgb(88, 87, 87) ;
+    padding: 3mm;
+    padding-top: 5mm;
+    font-size: 40px;
+}
+.navbar{
+    background-color: rgb(88, 87, 87) ;
+   
+    font-size: 24px;
+    padding:4px ;
+    margin-bottom: 10mm;
+    
+    
+}
+.items{
+    list-style-type: none;
+    display: inline-flex;
+    align-items:stretch;
+}
+.menuitems{
+    
+    padding-left:6px ;
+}
+.subtitle{
+    font-size: 38px;
+    color: rgb(102, 102, 102);
+    padding:10mm 8mm;
+    
+}
+.carnameinpage{
+    font-size: 20px;
+    line-height: 2;
+    font-variant-caps: all-petite-caps;
+    row-gap: 5mm;
+    cursor: pointer;
+}
+.separatecartitle{
+    text-align: center;
+    font-family: cursive;
+    padding: 8mm ;
+    background-color:rgb(88, 87, 87) ;
+    font-size: 34px;
+}
+ .adjustimages{
+     height: fit-content;
+     width: 35%;
+     padding-left: 32.5%;
+     padding-top: 5mm;
+ }   
+ .paragraphundercarimage{
+     font-size: 24px;
+     line-height: 1.5;
+     font-family: sans-serif ;
+     padding:15mm 18mm ;
+ }
+ .wholediclaimer{
+     background-color: rgba(0, 0, 0, 0.397);
+     color: aliceblue;
+ }
+ .disclaimerheading{
+    text-align: center;
+    font-size: 36px;
+    font-family: monospace;
+ }
+ .disclaimerpara{
+    line-height: 1.5;
+    font-family: sans-serif;
+    padding:15mm 18mm;
+ }
+
+
+#carone{
+    
+    background-color: lightgrey;
+    width: 100%;
+    
+}
+#cartwo{
+    
+    background-color: lightgrey;
+    width: 100%;
+    
+}
+#carthree{
+    
+    background-color: lightgrey;
+    width: 100%;
+   
+}
+#carfour{
+   
+    background-color: lightgrey;
+    width: 100%;
+   
+}
+#carfive{
+    
+    background-color: lightgrey;
+    width: 100%;
+    
+}
