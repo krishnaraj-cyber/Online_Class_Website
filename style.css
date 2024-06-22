@@ -1,108 +1,108 @@
-.header{
-    background-color:rgba(88, 87, 87, 0.623) ;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
 }
-
-.fortitle{
-    text-align: center;
-    margin-top: 0mm;
-    background-color:rgb(88, 87, 87) ;
-    padding: 3mm;
-    padding-top: 5mm;
-    font-size: 40px;
+body{
+  overflow: hidden;
 }
-.navbar{
-    background-color: rgb(88, 87, 87) ;
-   
-    font-size: 24px;
-    padding:4px ;
-    margin-bottom: 10mm;
-    
-    
+::selection{
+  background: #ffb507da;
 }
-.items{
-    list-style-type: none;
-    display: inline-flex;
-    align-items:stretch;
+.container{
+  max-width: 440px;
+  padding: 0 20px;
+  margin: 170px auto;
 }
-.menuitems{
-    
-    padding-left:6px ;
+.wrapper{
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
 }
-.subtitle{
-    font-size: 38px;
-    color: rgb(102, 102, 102);
-    padding:10mm 8mm;
-    
+.wrapper .title{
+  height: 90px;
+  background: #ffb507da;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.carnameinpage{
-    font-size: 20px;
-    line-height: 2;
-    font-variant-caps: all-petite-caps;
-    row-gap: 5mm;
-    cursor: pointer;
+.wrapper form{
+  padding: 30px 25px 25px 25px;
 }
-.separatecartitle{
-    text-align: center;
-    font-family: cursive;
-    padding: 8mm ;
-    background-color:rgb(88, 87, 87) ;
-    font-size: 34px;
+.wrapper form .row{
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
 }
- .adjustimages{
-     height: fit-content;
-     width: 35%;
-     padding-left: 32.5%;
-     padding-top: 5mm;
- }   
- .paragraphundercarimage{
-     font-size: 24px;
-     line-height: 1.5;
-     font-family: sans-serif ;
-     padding:15mm 18mm ;
- }
- .wholediclaimer{
-     background-color: rgba(0, 0, 0, 0.397); 
-     color: aliceblue;
- }
- .disclaimerheading{
-    text-align: center;
-    font-size: 36px;
-    font-family: monospace;
- }
- .disclaimerpara{
-    line-height: 1.5;
-    font-family: sans-serif;
-    padding:15mm 18mm;
- }
-
-
-#carone{
-    
-    background-color: lightgrey;
-    width: 100%;
-    
+.wrapper form .row input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
 }
-#cartwo{
-    
-    background-color: lightgrey;
-    width: 100%;
-    
+form .row input:focus{
+  border-color: #ffb507da;
+  box-shadow: inset 0px 0px 2px 2px #ffb507da;
 }
-#carthree{
-    
-    background-color: lightgrey;
-    width: 100%;
-   
+form .row input::placeholder{
+  color: #999;
 }
-#carfour{
-   
-    background-color: lightgrey;
-    width: 100%;
-   
+.wrapper form .row i{
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: #ffb507da;
+  border: 1px solid #ffb507da;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#carfive{
-    
-    background-color: lightgrey;
-    width: 100%;
-    
+.wrapper form .pass{
+  margin: -8px 0 20px 0;
+}
+.wrapper form .pass a{
+  color: #ffb507da;
+  font-size: 17px;
+  text-decoration: none;
+}
+.wrapper form .pass a:hover{
+  text-decoration: underline;
+}
+.wrapper form .button input{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #ffb507da;
+  border: 1px solid #ffb507da;
+  cursor: pointer;
+}
+form .button input:hover{
+  background: #ffb507da;
+}
+.wrapper form .signup-link{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.wrapper form .signup-link a{
+  color: #ffb507da;
+  text-decoration: none;
+}
+form .signup-link a:hover{
+  text-decoration: underline;
 }
