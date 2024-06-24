@@ -52,7 +52,7 @@ nav li a:hover {
 nav li img:hover{
     color: #111111;
     scale: 1.1;
-    shadow: 0 0 5px#555555;
+    
     transition-duration: .3s;
 
 }
