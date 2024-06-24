@@ -49,7 +49,15 @@ nav li a:hover {
   text-decoration: underline;
 }
 
-.searchcart {
+nav li img:hover{
+    color: #111111;
+    scale: 1.1;
+    shadow: 0 0 5px#555555;
+    transition-duration: .3s;
+
+}
+
+.Loginregister {
   color: white;
   background-color: #ffb607;
   height: 35px;
@@ -61,8 +69,11 @@ nav li a:hover {
   font-size: 14px;
   transition: .3s;
 }
+button{
+  border: none;
+}
 
-.searchcart:hover {
+.Loginregister:hover {
   color: #111111;
   scale: 1.02;
   box-shadow: 0 0 5px#555555;
@@ -179,24 +190,6 @@ button:hover {
 
 
 
-
-/* .expertit {
-  font-size: 45px;
-  font-weight: bold;
-  padding-left: 13%;
-  padding-top: 17%;
-  line-height: 1.5;
-}
-.lorem {
-  font-size: 20px;
-  padding-left: 13%;
-  padding-top: 30px;
-  line-height: 1.5;
-}
-.viewcoursebutton {
-  margin-top: 35px;
-  margin-left: 13%;
-} */
 .frame2 {
 
   width: 100%;
@@ -260,7 +253,13 @@ button:hover {
 .f3tables {
   width: auto;
   background-color: white;
+  cursor: pointer;
+}
 
+.f3tables:hover{
+  scale: 1.02;
+  box-shadow: 0 0 5px #555555;
+  transition: .3s ease-out
 }
 
 .f3tablesyellowtext {
@@ -273,33 +272,12 @@ button:hover {
   padding: 0 5px ;
 }
 
-/* .frame3 table{
-  margin : auto; margin-top: 50px;
-  
-}
-.frame3 table tr td{
-  margin: 10px;
-  gap: 10px;
-} */
+
 .frame4 {
   height: fit-content;
 }
 
-/* .multibox4 {
-  margin: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  width: 100%;
-  line-height: 20px;
-  justify-content: center;
 
-  align-items: center;
-}
-#multibox4 {
-  display: flex;
-  padding-left: 22%;
-} */
 
 .multiplebox4 {
   display: flex;
@@ -330,6 +308,23 @@ button:hover {
   padding-top: 55px;
   box-shadow: 0 0 10px rgb(92, 92, 92);
   line-height: 20px;
+  cursor: pointer;
+}
+
+
+
+.frame4image1:hover,
+.frame4image2:hover,
+.frame4image3:hover,
+.frame4image4:hover,
+.frame4image5:hover,
+.frame4image6:hover,
+.frame4image7:hover,
+.frame4image8:hover{
+  scale: 1.02;
+  box-shadow: 0 0 5px #555555;
+  transition: .3s ease-out
+
 }
 
 
@@ -373,27 +368,7 @@ button:hover {
     url(images/music.jpg);
 }
 
-/* .allcate{
-  margin-left: 46%;
-  
-}
- .allcategories{
-  text-decoration: none;
-  justify-content: center;
- }
- .allcategories p{
-  height: 45px;
-  width: 160px;
-  color: rgb(255, 255, 255);
-  background-color: #ffb607;
-  text-align: center;
-  line-height: 45px;
-  border-radius: 5px;
- }
- .allcategories p:hover{
-  color: black;
-  transition-duration: .3s;
- } */
+
 
 .allcatebutton {
   display: flex;
@@ -410,6 +385,11 @@ button:hover {
   border: none;
   padding: 8px 12px;
   border-radius: 5px;
+}
+.allcatebutton button:hover {
+  color: #111111;
+  scale: 1.02;
+  box-shadow: 0 0 5px#555555;
 }
 
 .yellowrectangle {
@@ -667,6 +647,13 @@ button:hover {
   border: black 2px;
   background-color: white;
   line-height: 1.5;
+  cursor: pointer;
+}
+
+.box:hover{
+  scale: 1.02;
+  box-shadow: 0 0 5px #555555;
+  transition: .3s ease-out;
 }
 
 .box h2 {
@@ -741,6 +728,14 @@ button:hover {
   margin: 25px auto;
   line-height: 1.2;
   box-shadow: 1px 1px 20px -10px#2727278f;
+  cursor: pointer;
+}
+
+.picfr7:hover{
+  
+  scale: 1.02;
+  box-shadow: 0 0 5px #555555;
+  transition: .3s ease-out
 }
 
 .picfr7 p,

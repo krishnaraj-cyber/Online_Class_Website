@@ -18,16 +18,16 @@
                         <ul>
 
                                 <li><a href="">home</a> </li>
-                                <li><a href="">course</a> </li>
+                                <li><a href="#link-courses">course</a> </li>
                                 <li><a href="">pages</a> </li>
                                 <li><a href="">shop</a> </li>
                                 <li><a href="">blog</a> </li>
-                                <li><a href="">contact</a> </li>
-                        </ul>
-                        <ul>
+                                <li><a href="consult.html">contact</a> </li>
+                        
+
                                 <li><a href=""><img  src="images/icons8-search-24.png" alt=""></a></li>
                                 <li><a href=""><img src="images/icons8-cart-24.png"></a></li>
-                                <a class="searchcart" href="branding.html" target="_blank">Login/Register</a>
+                                <li><button class="Loginregister" href="branding.html" target="_blank">Login/Register</button></li>
                                
 
                         </ul>
@@ -88,7 +88,7 @@
 
         </div>
         <div class="frame3">
-                <div style="padding-top: 10px;" ;>
+                <div style="padding-top: 10px;" id="link-courses">
                         <p class="stit"> Popular Courses </p>
                         <h2 class="mtit">Popular online courses</h2>
                 </div>
@@ -126,44 +126,7 @@
                                 </div>
                         </div>
                 </div>
-                <!-- <table>
-                        <tr style="height: 250PX;border:10px;">
-                                <td><img class="imagerow31" src="images/online course 1.jpg"></td>
-                                <td><img class="imagerow31" src="images/online course 3.jfif"></td>
-                                <td><img class="imagerow31" src="images/online course 2.jpg"></td>
-                        </tr>
-                        <tr style="height: 200PX ;line-height: 1.7 ;background-color: rgb(255, 255, 255);">
-                                <td style="padding-left: 30px;">
-                                        <p style="padding-bottom: 15px;color: #ffb607;">Education</p>
-                                        <p style="font-size: 20px;">Programming foundations: real-<br> world examples
-                                        </p>
-                                        <div
-                                                style="display: inline-flex; color: #868686;justify-content: space-evenly;padding-top: 10px;">
-                                                <p>0 Lessons</p>
-                                                <p style="padding-left: 200px;">44 students</p>
-                                        </div>
-                                </td>
-                                <td style="padding-left: 30px;">
-                                        <p style="padding-bottom: 15px;color: #ffb607;">School</p>
-                                        <p style="font-size: 20px;">Teaching assistant certificate in <br>learning in
-                                                schools</p>
-                                        <div
-                                                style="display: inline-flex; color: #868686;justify-content: space-evenly;padding-top: 10px;">
-                                                <p>0 Lessons</p>
-                                                <p style="padding-left: 200px;">44 students</p>
-                                        </div>
-                                </td>
-                                <td style="padding-left: 30px;">
-                                        <p style="padding-bottom: 15px;color: #ffb607;">Language</p>
-                                        <p style="font-size: 20px;">English:spelling,punctuation and<br> grammar</p>
-                                        <div
-                                                style="display: inline-flex; color: #868686;justify-content: space-evenly;padding-top: 10px;">
-                                                <p>0 Lessons</p>
-                                                <p style="padding-left: 200px;">39 students</p>
-                                        </div>
-                                </td>
-                        </tr>
-                </table> -->
+            
 
         </div>
         <div class="frame4">
@@ -618,7 +581,7 @@
 
 <script>
         const menu = document.querySelector('.menu')
-        const menuList = document.querySelector('nav ul')
+        const menuList = document.querySelector('nav ul ')
         menu.addEventListener('click',()=>{
                 menuList.classList.toggle('showmenu')
         })
