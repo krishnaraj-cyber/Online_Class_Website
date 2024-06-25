@@ -1,0 +1,36 @@
+header{
+    height: 50px;
+    width: 100%;
+    background-color: #797474;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo img.eduonlogo{
+    height: 50px;
+    width: fit-content;
+}
+.nav-items{
+    display: inline-flex;
+    align-items: center;
+    gap: 15PX;
+
+}
+header > .nav-items a{
+    text-decoration: none;
+    color: black;
+    
+}
+.search-cart-button{
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-cart-button button.login-button{
+    background-color: #ffb607;
+    border-radius: 5px;
+    height: 27px;
+    width: 120px;
+    border: none;
+    color:white ;
+}

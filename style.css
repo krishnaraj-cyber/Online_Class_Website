@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+*.branding-login {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
-body{
+body.branding-login {
   overflow: hidden;
 }
-::selection{
+.branding-login ::selection{
   background: #ffb507da;
 }
-.container{
+.branding-login .container{
   max-width: 440px;
   padding: 0 20px;
   margin: 170px auto;
 }
-.wrapper{
+.branding-login .wrapper{
   width: 100%;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
 }
-.wrapper .title{
+.branding-login .wrapper .title{
   height: 90px;
   background: #ffb507da;
   border-radius: 5px 5px 0 0;
@@ -33,17 +33,17 @@ body{
   align-items: center;
   justify-content: center;
 }
-.wrapper form{
+.branding-login .wrapper form{
   padding: 30px 25px 25px 25px;
 }
-.wrapper form .row{
+.branding-login .wrapper form .row{
   height: 45px;
   margin-bottom: 15px;
   position: relative;
 }
-.wrapper form .row input{
+.branding-login .wrapper form .row input{
   height: 100%;
-  width: 100%;
+  width: 82%;
   outline: none;
   padding-left: 60px;
   border-radius: 5px;
@@ -51,38 +51,38 @@ body{
   font-size: 16px;
   transition: all 0.3s ease;
 }
-form .row input:focus{
+.branding-login form .row input:focus{
   border-color: #ffb507da;
   box-shadow: inset 0px 0px 2px 2px #ffb507da;
 }
-form .row input::placeholder{
+.branding-login form .row input::placeholder{
   color: #999;
 }
-.wrapper form .row i{
+.branding-login .wrapper form .row i{
   position: absolute;
   width: 47px;
   height: 100%;
   color: #fff;
   font-size: 18px;
-  background: #ffb507da;
+  background: #ffb607;
   border: 1px solid #ffb507da;
   border-radius: 5px 0 0 5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.wrapper form .pass{
+.branding-login .wrapper form .pass{
   margin: -8px 0 20px 0;
 }
-.wrapper form .pass a{
+.branding-login .wrapper form .pass a{
   color: #ffb507da;
   font-size: 17px;
   text-decoration: none;
 }
-.wrapper form .pass a:hover{
+.branding-login .wrapper form .pass a:hover{
   text-decoration: underline;
 }
-.wrapper form .button input{
+.branding-login .wrapper form .button input{
   color: #fff;
   font-size: 20px;
   font-weight: 500;
@@ -91,18 +91,22 @@ form .row input::placeholder{
   border: 1px solid #ffb507da;
   cursor: pointer;
 }
-form .button input:hover{
+.branding-login form .button input:hover{
   background: #ffb507da;
 }
-.wrapper form .signup-link{
+.branding-login .wrapper form .signup-link{
   text-align: center;
   margin-top: 20px;
   font-size: 17px;
 }
-.wrapper form .signup-link a{
+.branding-login .wrapper form .signup-link a{
   color: #ffb507da;
   text-decoration: none;
 }
-form .signup-link a:hover{
+.branding-login form .signup-link a:hover{
   text-decoration: underline;
+}
+form .button{
+  display: flex;
+  justify-content: center;
 }

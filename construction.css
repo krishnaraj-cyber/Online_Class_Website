@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 * {
   margin: 0%;
   padding: 0;
@@ -14,18 +19,102 @@ body {
 
 
 
-/* header {
-  height: 50px;
+
+header {
+  height: 75x;
   width: 100%;
-  background-color: rgb(255, 255, 255);
- 
-} */
+  background-color: #ffffff;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.logo img.eduonlogo {
+  height: 60px;
+  width: fit-content;
+}
+
+.nav-items {
+  display: inline-flex;
+  align-items: center;
+  gap: 20PX;
+
+}
+
+header>.nav-items a {
+  text-decoration: none;
+  color: black;
+  font-size: 11pt;
+
+}
+
+header>.nav-items a:hover {
+  color: #ffb607;
+  text-decoration: underline 2px 2px;
+  transition-duration: .2s;
+}
+
+.search-cart-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-cart-button a>img:hover {
+  color: #111111;
+  scale: 1.1;
+  transition-duration: .3s;
+}
+
+.search-cart-button button.login-button {
+  background-color: #ffb607;
+  border-radius: 5px;
+  height: 30px;
+  width: 140px;
+  border: none;
+  color: white;
+  font-size: 11pt;
+}
+
+.search-cart-button button.login-button:hover {
+  color: #111111;
+  scale: 1.02;
+  transition-duration: .3s;
+  box-shadow: 0 0 5px#555555;
+  ;
+}
+
+.mobile-login-button {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
 header nav {
   display: flex;
   justify-content: space-around;
   height: 50px;
   width: 100%;
   background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 2;
 }
 
 nav ul {
@@ -83,21 +172,27 @@ button{
   height: 35px;
   width: fit-content;
   padding-top: 7px;
-}
+} */
 
 .menuline {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   height: 3px;
   width: 20px;
   border-radius: 5px;
-  margin-bottom: 4px;
+  margin: 4px;
 
 }
 
 .menu {
+  background-color: white;
+  border: none;
   cursor: pointer;
-  display: none;
   align-self: center;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  display: none;
+  z-index: 2;
 }
 
 
@@ -114,41 +209,48 @@ button:hover {
 }
 
 .frame1 {
+  padding-top: 75px;
   background-color: #f5f6fa;
   width: 100%;
 
 }
 
-.frame1 div {
-
-  width: 100%;
-  height: auto;
+.frame1-flex {
+  display: flex;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 2fr;
+  align-items: center;
 
 
 }
 
+.frame1-content {
+  margin: 25vh 0 20vh 11vw;
+  padding-bottom: 100px;
+}
+
+.frame1-img {
+  margin: 0 11vw 0 0;
+}
+
+
 .frame1 h1 {
-  font-size: 45px;
+  font-size: 55px;
   line-height: 1.5;
   font-weight: bold;
-  padding: 25vh 0 25px 9.5vw;
-  width: 38vw;
+  padding-bottom: 40px;
 }
 
 .frame1 .lorem {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
-  width: 40vw;
-  padding: 25px 0 55px 9.5vw;
+  padding-bottom: 40px;
 }
-.viewcoursebutton{
-  padding: 15px 0 45px 0;
-}
-.viewcoursebutton button {
 
+.viewcoursebutton button {
+  font-size: 16px;
   color: white;
   background-color: #ffb607;
-  margin: 0 0 0 9.5vw;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -156,7 +258,9 @@ button:hover {
   height: 35px;
   line-height: 35px;
   text-align: center;
+
 }
+
 
 .viewcoursebutton button:hover {
   scale: 1.05;
@@ -171,20 +275,11 @@ button:hover {
 
 }
 
-.viewcoursebutton:hover {
-  transition-duration: 0.3s;
-  background-origin: padding-box;
-  color: black;
-  cursor: pointer;
 
-}
 
 .frame1 img {
   height: auto;
-  width: 35vw;
-  position: relative;
-  margin-left: 60vw;
-  bottom: 350px;
+  width: 600px;
 
 }
 
@@ -233,6 +328,7 @@ button:hover {
 .imagerow31 {
   height: 180px;
   width: 320px;
+  object-fit: cover;
 }
 
 .frame3 {
@@ -256,7 +352,7 @@ button:hover {
   cursor: pointer;
 }
 
-.f3tables:hover{
+.f3tables:hover {
   scale: 1.02;
   box-shadow: 0 0 5px #555555;
   transition: .3s ease-out
@@ -269,7 +365,28 @@ button:hover {
 
 .f3tablespbiggertext {
   font-size: 20px;
-  padding: 0 5px ;
+  padding: 0 5px;
+}
+
+#f3-table-pic3{
+  position:relative;
+}
+#topup-button{
+  height: 25px;
+  width: 25px;
+  background-color: #ffb607;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 20px;
+  left: 97%;
+}
+#topup-button img{
+  width: 15px;
+
+
 }
 
 
@@ -320,11 +437,10 @@ button:hover {
 .frame4image5:hover,
 .frame4image6:hover,
 .frame4image7:hover,
-.frame4image8:hover{
+.frame4image8:hover {
   scale: 1.02;
   box-shadow: 0 0 5px #555555;
   transition: .3s ease-out
-
 }
 
 
@@ -386,6 +502,7 @@ button:hover {
   padding: 8px 12px;
   border-radius: 5px;
 }
+
 .allcatebutton button:hover {
   color: #111111;
   scale: 1.02;
@@ -487,8 +604,6 @@ button:hover {
 .frame5 {
   background-color: #f5f6fa;
   width: 100%;
-  /* padding-left: 10%;
-    margin-top: 50px; */
 }
 
 .frame5main {
@@ -498,18 +613,11 @@ button:hover {
   padding-bottom: 80px;
 }
 
-/* .frame5img1 {
-  position: absolute; 
-  height: 700px;
-  width: fit-content;
-  left: 49.5%; 
-  margin-top: 155px;
-} */
 
 .frame5img2 {
 
   height: fit-content;
-  width: 35vw;
+  width: 550px;
   margin-top: 130px;
   align-items: center;
   justify-content: center;
@@ -518,8 +626,6 @@ button:hover {
 
 .frame500 {
   padding-top: 50px;
-  /* padding-left: 10%; */
-  /* background-color: rgb(32, 29, 29); */
   height: fit-content;
 }
 
@@ -535,6 +641,7 @@ button:hover {
   align-items: center;
   line-height: 1.2;
 }
+
 .fr5datetime {
   margin-top: 20px;
   padding-left: 20px;
@@ -573,7 +680,7 @@ button:hover {
 .frame5cont666 {
   color: #9fa8af;
   margin-top: 10px;
-  font-size:12px;
+  font-size: 12px;
   font-weight: 450;
 }
 
@@ -594,21 +701,6 @@ button:hover {
   font-size: 30px;
   margin-left: 11%;
 }
-
-
-
-/* .dividerframe5 {
-  background-color: #d7dadf;
-  height: 1.5px;
-  width: 75vw;
-  justify-content: center;
-  margin:  auto;
-} */
-
-
-
-
-
 
 
 .frame6 {
@@ -650,7 +742,7 @@ button:hover {
   cursor: pointer;
 }
 
-.box:hover{
+.box:hover {
   scale: 1.02;
   box-shadow: 0 0 5px #555555;
   transition: .3s ease-out;
@@ -702,7 +794,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   margin: 50px auto;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .picfr7 p {
@@ -731,8 +823,8 @@ button:hover {
   cursor: pointer;
 }
 
-.picfr7:hover{
-  
+.picfr7:hover {
+
   scale: 1.02;
   box-shadow: 0 0 5px #555555;
   transition: .3s ease-out
@@ -812,22 +904,6 @@ button:hover {
   margin: 20px 0;
 }
 
-/* .frame09 div p {
-  padding-top: 15%;
-}
-
-.frame09 div h2 {
-  padding: 0 0 7% 0;
-}
-
-.frame99 {
-  list-style-type: none;
-  position: absolute;
-  line-height: 4;
-  margin-top: 100px;
-  margin-left: 14%;
-} */
-
 .dividerframe9 {
   background-color: #d7dadf79;
   height: 1.5px;
@@ -859,10 +935,18 @@ button:hover {
   font-size: 15px;
 }
 
+.copyrights span{
+  color: #ffb607;
+}
+
 
 @media all and (max-width: 1150px) {
 
   .frame5img2 {
+    display: none;
+  }
+
+  .frame1-img {
     display: none;
   }
 }
@@ -873,44 +957,70 @@ button:hover {
   header {
     background-color: rgb(255, 255, 255);
     width: 100%;
+    height: 75px;
+    flex-direction: column;
   }
 
-  header nav {
-    flex-direction: column;
-
+  header .logo {
+    align-self: flex-start;
   }
 
-  nav ul {
+  header .nav-items,
+  header .search-cart-button {
     flex-direction: column;
-    display: none;
     width: auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 100px 100vw 130px 100vw;
   }
 
-  nav ul li {
-    padding-bottom: 10px;
+
+  header .nav-items>div,
+  header .search-cart-button>div {
+    padding: 10px;
     display: flex;
     justify-content: center;
-    background-color:white;
   }
+
+  .mobile-login-button {
+    display: block;
+    border: none;
+    background-color: #ffb607;
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 30px;
+
+  }
+
 
   .menu {
+    background-color: none;
+    border: none;
     display: block;
-    position: absolute;
+    position: fixed;
     right: 25px;
-    top: 15px;
+    top: 25px;
   }
 
-  .showmenu{
+  .showmenu {
     display: block;
+  }
+
+  .hide {
+    display: none;
   }
 
   .frame1 h1,
   .lorem {
-    width: 80vw;
+    width: 100vw;
   }
 
-  .frame1 img {
-    display: none;
+  .frame1-flex {
+    display: block;
+  }
+
+  .frame1-content {
+    margin: 0 30px;
   }
 
   .viewcoursebutton button {
@@ -921,6 +1031,8 @@ button:hover {
   .viewcoursebutton {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
   }
 
   .buynowbutton {
@@ -941,24 +1053,29 @@ button:hover {
   .frame5cont {
     width: 320px;
   }
+
   .frame1 h1 {
     font-size: 42px;
     line-height: 1.5;
     font-weight: bold;
-    padding: 25vh 9.5vw 25px 9.5vw;
+    padding: 15vh 0 25px 0;
     width: 81vw;
   }
-  
+
   .frame1 .lorem {
     font-size: 16px;
     line-height: 1.5;
-    padding: 70px 9.5vw 70px 9.5vw;
+    padding: 70px 0 70px 0;
     width: 81vw;
     text-align: center;
   }
-
-
-
-
-
 }
+
+
+
+
+
+/* branding ---------------------------------------------branding / login --------------------------------------------------------------------------login */
+
+
+
