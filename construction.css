@@ -220,6 +220,7 @@ button:hover {
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 2fr;
   align-items: center;
+  position: relative;
 
 
 }
@@ -227,10 +228,12 @@ button:hover {
 .frame1-content {
   margin: 25vh 0 20vh 11vw;
   padding-bottom: 100px;
+  z-index: 1;
 }
 
 .frame1-img {
   margin: 0 11vw 0 0;
+  z-index: 1;
 }
 
 
@@ -274,21 +277,47 @@ button:hover {
   margin-bottom: 50px;
 
 }
-
+#x-design{
+  position: absolute;
+  z-index:0 ;
+  height: 30px;
+  width: fit-content;
+  left: 35%;
+  top: 70%;
+}
+#round-design{
+  position: absolute;
+  z-index: 0;
+  height: 50px;
+  width: fit-content;
+  left: 40%;
+  top: 58%;
+}
+#doubled-circles{
+  position: absolute;
+  z-index: 0;
+  height: 300px;
+  width: fit-content;
+  left: 50%;
+  top: 53%;
+}
 
 
 .frame1 img {
   height: auto;
   width: 600px;
-
 }
-
-
 
 .frame2 {
 
   width: 100%;
   background-color: white;
+}
+
+.title-subtitle{
+  margin-right:auto ;
+  margin-left: auto;
+  text-align: center;
 }
 
 .stit {
@@ -299,9 +328,16 @@ button:hover {
 
 .mtit {
   text-align: center;
-  margin-top: 10px;
+  margin: 10px auto;
   font-size: 30px;
 }
+
+
+.mstit-underline{
+  width: 250px;
+  text-align: center;
+}
+
 
 .alllogo {
   text-align: center;
@@ -537,15 +573,20 @@ button:hover {
   margin-bottom: 20px;
   min-width: 300px;
 }
+#invidunt{
+  width: 35%;
+  margin: auto;
+  z-index: 1;
+}
 
 .logojess {
   display: flex;
   margin: 40px auto;
   justify-content: center;
-
+  position: relative;
 }
 
-.logojess img {
+.logojess #logojess {
   width: 40px;
   height: 40px;
   object-fit: cover;
@@ -553,6 +594,23 @@ button:hover {
   border-radius: 50%;
   margin-right: 15px;
 
+}
+#left-design-fr4{
+  position: absolute;
+  height: 200px;
+  width: fit-content;
+  top:-320px ;
+  left: 7%;
+  z-index: 0;
+
+}
+#right-design-fr4{
+  position: absolute;
+  height: 200px;
+  width: fit-content;
+  top: -50px;
+  right: 1%;
+  z-index: 0;
 }
 
 .buynowbutton {
@@ -640,6 +698,7 @@ button:hover {
   justify-content: space-evenly;
   align-items: center;
   line-height: 1.2;
+  position: relative;
 }
 
 .fr5datetime {
@@ -688,6 +747,14 @@ button:hover {
   height: 150px;
   width: fit-content;
   padding-top: 20px;
+
+}
+.ellipse-border{
+  position: absolute;
+  height: 155px;
+  width: fit-content;
+  top: 17px;
+  left: 63px;
 }
 
 .stitframe5 {
@@ -729,6 +796,8 @@ button:hover {
   height: 380px;
   width: 250px;
   background-size: cover;
+  object-fit: cover;
+  object-position:top;
   background-color: #d6d2db;
 }
 
@@ -882,14 +951,14 @@ button:hover {
   justify-content: center;
 }
 
-.frame09 .disclaimercontent {
+.frame09 .disclaimercontent ,.disclaimercontent1  {
   margin: 40px 5%;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .frame09 .disclaimercontent div {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .frame09 .disclaimercontent div img {
@@ -900,9 +969,16 @@ button:hover {
 }
 
 .disclaimercontent h2,
-.disclaimercontent p {
+.disclaimercontent p ,.disclaimercontent1 h2,
+.disclaimercontent1 p {
   margin: 20px 0;
 }
+
+.disclaimercontent1 h2{
+  margin-bottom: 40px;
+}
+
+
 
 .dividerframe9 {
   background-color: #d7dadf79;
@@ -946,7 +1022,7 @@ button:hover {
     display: none;
   }
 
-  .frame1-img {
+  .frame1-img , #x-design , #round-design ,#doubled-circles {
     display: none;
   }
 }
@@ -963,6 +1039,7 @@ button:hover {
 
   header .logo {
     align-self: flex-start;
+    position: fixed;
   }
 
   header .nav-items,
@@ -970,7 +1047,8 @@ button:hover {
     flex-direction: column;
     width: auto;
     background-color: rgba(255, 255, 255, 0.95);
-    padding: 100px 100vw 130px 100vw;
+    padding: 100px 100vw 1300px 100vw;
+    gap: 5px;
   }
 
 
@@ -988,11 +1066,13 @@ button:hover {
     height: 35px;
     width: 120px;
     border-radius: 5px;
-    margin-top: 30px;
 
   }
-
-
+#invidunt{
+  width: 90%;
+  margin-left: 5%;
+  text-align: justify;
+}
   .menu {
     background-color: none;
     border: none;
@@ -1069,11 +1149,49 @@ button:hover {
     width: 81vw;
     text-align: center;
   }
+  .mtit{
+    width: 90%;
+    margin-left:5% ;
+  }
+
+
+/* display none's */
+#left-design-fr4 ,#right-design-fr4{
+  display: none;
+}
+
+.frame09 .disclaimercontent , .disclaimercontent1 {
+  text-align: center;
+}
+
+.frame09 .disclaimercontent div , .disclaimercontent1 {
+  justify-content: center;
+}
+
+
 }
 
 
 
 
+
+@media (max-width:800px) and (min-width:540px) {
+  
+  .ellipse-border{
+    top: 14px;
+    left: 1.5px;
+  }
+}
+
+
+@media (max-width:539px) {
+  .ellipse-border{
+    top: 15px;
+  left: 50%;
+  margin-left: -108px;
+}
+
+}
 
 /* branding ---------------------------------------------branding / login --------------------------------------------------------------------------login */
 
