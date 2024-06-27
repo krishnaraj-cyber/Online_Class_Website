@@ -308,6 +308,12 @@ button:hover {
   width: 600px;
 }
 
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    FRAME 2     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+
+
 .frame2 {
 
   width: 100%;
@@ -359,11 +365,21 @@ button:hover {
 .alllogo p{
   position: relative;
   bottom: 30px;
+  font-weight: 600;
 }
 
 .image2 {
   text-align: center;
 }
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    FRAME 3    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
 
 .imagerow31 {
   height: 180px;
@@ -404,7 +420,8 @@ button:hover {
 }
 
 .f3tablespbiggertext {
-  font-size: 20px;
+  font-size:larger;
+  font-weight: 480;
   padding: 0 5px;
 }
 
@@ -428,6 +445,16 @@ button:hover {
 
 
 }
+
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    FRAME  4    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
 
 
 .frame4 {
@@ -525,6 +552,8 @@ button:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url(images/music.jpg);
 }
+
+
 
 
 
@@ -674,6 +703,16 @@ button:hover {
   margin: 2px;
 }
 
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<     FRAME  5    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
 .frame5 {
   background-color: #f5f6fa;
   width: 100%;
@@ -730,6 +769,7 @@ button:hover {
   padding-left: 20px;
   font-weight: 550;
   font-size: medium;
+  font-weight: 650;
 }
 
 .frame5cont img {
@@ -785,6 +825,21 @@ button:hover {
 }
 
 
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    FRAME  6    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+
+
+
+
+
 .frame6 {
   background: linear-gradient(white, #f5f6fa);
   width: 100%;
@@ -827,6 +882,10 @@ button:hover {
   cursor: pointer;
 }
 
+.framebox>.box>p{
+  color: #807B80;
+}
+
 .box:hover {
   scale: 1.02;
   box-shadow: 0 0 5px #555555;
@@ -852,6 +911,9 @@ button:hover {
   text-align: center;
   margin: 30px 0;
 }
+.ecclipses div p{
+  font-weight: 600;
+}
 
 .ecclipsestext span {
   text-align: center;
@@ -868,6 +930,18 @@ button:hover {
   margin: auto;
 
 }
+
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    FRAME  7    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+
 
 .frame7 {
   height: fit-content;
@@ -931,6 +1005,16 @@ button:hover {
   object-fit: cover;
 }
 
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<     FRAME 8     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+
 .frame8 {
   display: flex;
   flex-wrap: wrap;
@@ -950,7 +1034,19 @@ button:hover {
   align-items: center;
   height: 30px;
   width: 30px;
+}    
+.frame8>div>h2{
+  color: #807B80;
 }
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<     FRAME  9    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
 
 .frame9 {
   width: 100%;
@@ -1029,6 +1125,19 @@ button:hover {
 }
 
 
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    MEDIA QUERIES     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    MEDIA QUERIES     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    MEDIA QUERIES     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+
+
 @media all and (max-width: 1150px) {
 
   .frame5img2 {
@@ -1038,6 +1147,31 @@ button:hover {
   .frame1-img , #x-design , #round-design ,#doubled-circles {
     display: none;
   }
+
+  .frame1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(images/everything-will-be-awesome-group-young-people-casual-clothes-working-modern-office.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    animation: frame1-animation 10s infinite ease-in-out;
+  }
+@keyframes frame1-animation{
+  25%{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(images/development.jpg);;
+  }
+  50%{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(images/business.jpg);;
+  }
+  75%{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(images/it&software.jpg);;
+  }
+}
+
+
 }
 
 
@@ -1086,7 +1220,7 @@ button:hover {
 
 
 
-  .frame1 {
+  /* .frame1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
     url(images/everything-will-be-awesome-group-young-people-casual-clothes-working-modern-office.jpg);
     background-position: center;
@@ -1107,7 +1241,7 @@ button:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
     url(images/it&software.jpg);;
   }
-}
+} */
 
 
 
