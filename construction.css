@@ -344,17 +344,21 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: space-evenly;
-  margin: 5vh 10vw 0vh 10vw;
+  column-gap: 120px;
+  margin-left: -20px;
 }
 
 .logo12 {
-  margin-bottom: 7vh;
+  margin-bottom: 3vh;
 }
 
 .alllogo img {
   width: auto;
   height: 195px;
+}
+.alllogo p{
+  position: relative;
+  bottom: 30px;
 }
 
 .image2 {
@@ -376,16 +380,16 @@ button:hover {
 .f3container {
   display: flex;
   flex-wrap: wrap;
-  border: #F5F6FA solid 100px;
-  gap: 25px;
+  COLUMN-gap: 90px;
   justify-content: center;
-  margin: 50px auto;
+  margin: 50px auto 70px auto;
 }
 
 .f3tables {
-  width: auto;
+  width: 320px;
   background-color: white;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
 .f3tables:hover {
@@ -436,8 +440,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 10vh 15vw;
-
+  margin: 5vh 15vw 7vh 15vw;
   justify-content: center;
 }
 
@@ -451,7 +454,7 @@ button:hover {
 .frame4image7,
 .frame4image8 {
   height: 100px;
-  width: 250px;
+  width: 270px;
   text-align: center;
   align-items: center;
   font-weight: bold;
@@ -549,19 +552,25 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 10vh auto;
+  margin: 10vh auto 5vh auto;
   justify-content: center;
 
 }
 
 .yellowboxcontent {
   color: white;
-  line-height: 40px;
-  padding-left: 40px;
-  height: 150px;
-  width: 330px;
+  padding-left: 20px;
+  height: 170px;
+  width: 290px;
   align-self: center;
   align-items: center;
+}
+.yellowboxcontent h3{
+  padding: 40px 0 15px 0;
+  font-size: larger;
+}
+.yellowboxcontent p{
+  line-height: 2;
 }
 
 .yellowpt {
@@ -569,7 +578,7 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   background-color: #ffb607;
-  padding: 20px 10px;
+  padding: 0 0 0 20px;
   margin-bottom: 20px;
   min-width: 300px;
 }
@@ -581,7 +590,7 @@ button:hover {
 
 .logojess {
   display: flex;
-  margin: 40px auto;
+  margin: 20px auto 30px auto;
   justify-content: center;
   position: relative;
 }
@@ -615,6 +624,7 @@ button:hover {
 
 .buynowbutton {
   text-align: end;
+  padding: 0 0 40px 0;
 }
 
 
@@ -640,7 +650,9 @@ button:hover {
 .scrollbars {
   display: flex;
   justify-content: center;
-  margin: 10px 10px 40px 10px;
+  margin: 10px 10px 30px 10px;
+  position: relative;
+  bottom: 40px;
 }
 
 .scroll {
@@ -760,13 +772,13 @@ button:hover {
 .stitframe5 {
   color: #ffb607;
   padding-top: 60px;
-  margin-left: 11%;
+  margin-left: 19.9vw;
 }
 
 .mtitframe5 {
   padding-top: 10px;
   font-size: 30px;
-  margin-left: 11%;
+  margin-left: 19.9vw;
 }
 
 
@@ -779,6 +791,7 @@ button:hover {
   height: auto;
   justify-content: center;
   margin: 50px;
+  column-gap: 27px;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -822,21 +835,19 @@ button:hover {
 }
 
 .ecclipses {
-  margin: 0px 22vw 0 22vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: space-evenly;
-  gap: 10px;
+  column-gap: 70px;
 }
 
 .ecclipses img {
-  height: 100px;
+  height: 150px;
 }
 
 .ecclipses div {
   text-align: center;
-  margin: 30px auto;
+  margin: 30px 0;
 }
 
 .ecclipsestext span {
@@ -861,9 +872,10 @@ button:hover {
 
 .frame7container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 50px auto;
-  justify-content: space-evenly;
+  column-gap: 90px;
 }
 
 .picfr7 p {
@@ -886,7 +898,7 @@ button:hover {
   height: 380px;
   width: 320px;
   min-width: 300px;
-  margin: 25px auto;
+  margin: 25px 0;
   line-height: 1.2;
   box-shadow: 1px 1px 20px -10px#2727278f;
   cursor: pointer;
@@ -911,26 +923,24 @@ button:hover {
 }
 
 .picfr7 img {
-  height: 200px;
   width: 320px;
   background-position: center;
   object-fit: cover;
 }
 
 .frame8 {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   background-color: #f5f6fa;
   align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
   padding: 50px 0;
+  column-gap: 46px;
 }
 
 .frame8 div {
   display: flex;
-  margin: 30px 30px;
+  margin: 30px 0px;
 }
 
 .frame8 div img {
@@ -952,7 +962,7 @@ button:hover {
 }
 
 .frame09 .disclaimercontent ,.disclaimercontent1  {
-  margin: 40px 5%;
+  margin: 40px 50px;
   /* text-align: center; */
 }
 
@@ -998,7 +1008,7 @@ button:hover {
   display: flex;
   justify-content: center;
   color: white;
-  padding: 1.5%;
+  padding: 20px 0 0 0;
 }
 
 .copyrights img {
@@ -1115,6 +1125,7 @@ button:hover {
     padding: 0;
   }
 
+
   .buynowbutton {
     text-align: center;
   }
@@ -1154,19 +1165,23 @@ button:hover {
     margin-left:5% ;
   }
 
+  .frame09 .disclaimercontent , .disclaimercontent1 {
+    text-align: center;
+  }
+  
+  .frame09 .disclaimercontent div , .disclaimercontent1 {
+    justify-content: center;
+  }
+
 
 /* display none's */
-#left-design-fr4 ,#right-design-fr4{
+#left-design-fr4 ,
+#right-design-fr4 ,
+.scrollbars {
   display: none;
 }
 
-.frame09 .disclaimercontent , .disclaimercontent1 {
-  text-align: center;
-}
 
-.frame09 .disclaimercontent div , .disclaimercontent1 {
-  justify-content: center;
-}
 
 
 }
