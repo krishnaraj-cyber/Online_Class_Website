@@ -284,7 +284,15 @@ button:hover {
   width: fit-content;
   left: 35%;
   top: 70%;
+  animation: x_design 3s infinite ;
 }
+
+@keyframes x_design {
+    0% {transform: rotate(0deg);}
+    50%  {transform:rotate(180deg);}
+    
+}
+
 #round-design{
   position: absolute;
   z-index: 0;
@@ -292,6 +300,16 @@ button:hover {
   width: fit-content;
   left: 40%;
   top: 58%;
+  animation: x_round_design 15s infinite linear ;
+}
+
+@keyframes x_round_design {
+    0% {translate: -800px -350px;}
+    8% {translate: -600px -520px;}
+    50%  {translate: 1120px 50px;}
+    65%  {translate: 350px 350px;}
+    100% {translate: -800px -350px;}
+    
 }
 #doubled-circles{
   position: absolute;
@@ -299,7 +317,16 @@ button:hover {
   height: 300px;
   width: fit-content;
   left: 50%;
-  top: 53%;
+  top: 53%;  
+  animation: x_doubled_circles 10s infinite linear;
+}
+
+@keyframes x_doubled_circles {
+    0% {transform: rotate(0deg);translate: 20px 0;} 
+    13%  {transform:rotate(60deg);translate:20px -20px;}
+    67% {transform: rotate(-200deg);translate:60px 40px;}
+    100% {transform: rotate(0deg);translate: 20px 0;} 
+    
 }
 
 
@@ -356,6 +383,11 @@ button:hover {
 
 .logo12 {
   margin-bottom: 3vh;
+  animation: _logo12 .5s  ease-in-out;
+}
+@keyframes _logo12 {
+  0%{translate: 500px -100px;}
+  100%{translate: 0px 0px;}
 }
 
 .alllogo img {
@@ -714,7 +746,7 @@ button:hover {
 
 
 .frame5 {
-  background-color: #f5f6fa;
+  /* background-color: #f5f6fa; */
   width: 100%;
 }
 
@@ -752,6 +784,7 @@ button:hover {
   justify-content: space-evenly;
   align-items: center;
   line-height: 1.2;
+  box-shadow: 0 0 10px -5px #303030;
 }
 
 .fr5datetime {
@@ -823,7 +856,15 @@ button:hover {
 .stitmtitframe5{
   margin-left: 19.9vw;
 }
+.untitled1-bg{
+  background-image: url(images/Untitled-1-bg.png);
+  height:fit-content;
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size: cover;
+  background-position-y:-200px ;
 
+}
 
 
 
@@ -1138,7 +1179,7 @@ button:hover {
 
 
 
-@media all and (max-width: 1150px) {
+@media all and (max-width: 1250px) {
 
   .frame5img2 {
     display: none;
