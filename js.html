@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *{text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0%;
+       }
+       body{
+        margin: 30vh 20vw;
+       }
+       button#butt{
+        display: block;
+        margin-left: 30vw;
+        transform: translate(-50%);
+        margin-bottom: 50px;
+        padding:10px  40px;
+        border: none;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3) ), url(images/photography.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        border-radius: 5px;
+       }
+       button:hover{box-shadow: 0 0 5px #000;}
+
+
+
+        /* background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7) ),url(images/marketing.jpg) ; 
+        background-repeat: no-repeat;
+        height: 100vh;
+        } */
+        input{
+            height: 30px;
+            width : 200px;
+            background-color: rgba(128, 128, 128, 0.219);
+            border-radius: 5px;
+            display: inline;
+            margin: 50px auto;
+            
+    
+        }
+        p{
+            padding-bottom: 10px;
+        } 
+        a{
+            text-decoration: none;
+        }
+        .back{
+        background-color: #afafaf70; display: block;
+        margin-left: 30vw;
+        transform: translate(-50%);
+        margin-bottom: 50px;
+        margin-top: 30px;
+        padding:10px  40px;
+        border: none;
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Guess the Number from 1-10</h1>
+
+    <input type="Number" id="guessnumber">
+    <button onclick="answer()" id="butt">Check</button>
+    <p id="reply">You're Right / Wrong</p>
+    <p id="result">Your Score : 10</p>
+    
+
+    <a href="index.html"><button class="back"> Back</button></a>
+
+
+    <script>
+        var guessnumbers = document.getElementById("guessnumber")
+        var results = document.getElementById("result")
+        var replys = document.getElementById("reply")
+        var originalnumber = Math.floor(Math.random()*10)+1
+        var resulttt = 10
+
+
+
+
+        function answer()
+         {
+
+            var famous = guessnumbers.value 
+
+            if (famous==originalnumber) {
+                reply.textContent = "You're Right"
+                alert("You WON")
+            }
+            else {
+                resulttt = resulttt - 1
+                reply.textContent = "You're Wrong"
+                result.textContent= "Your Score : " + resulttt
+                poiu();
+            }
+
+        }
+
+        function poiu () {
+            if (resulttt<=0){
+                alert( "You Loose The Match")
+                result.textContent= "Your Score : 0"
+
+            }
+
+        }
+
+
+
+    </script>
+</body>
+</html>

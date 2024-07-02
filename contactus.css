@@ -99,8 +99,9 @@ body{
 .right-side .button{
   display: inline-block;
   margin-top: 12px;
+
 }
-.right-side .button input[type="button"]{
+.right-side .button input[type="submit"]{
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -111,8 +112,9 @@ body{
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button input[type="button"]:hover{
-  background: #5029bc;
+.button input[type="submit"]:hover{
+  background: #ffb507b9;
+  scale: 1.02;
 }
 
 @media (max-width: 950px) {

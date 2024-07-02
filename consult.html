@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title>Contact Us| Contact us </title>
-    <link rel="stylesheet" href="contactus.css">
-    <link rel="stylesheet" href="construction.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us| Contact us </title>
+  <link rel="stylesheet" href="contactus.css">
+  <link rel="stylesheet" href="construction.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 
 
-<body >
+<body>
 
 
   <header>
     <div class="logo">
-            <a href="index.html"><img class="eduonlogo" src="images/eduonlogo.png"></a>
+      <a href="index.html"><img class="eduonlogo" src="images/eduonlogo.png"></a>
     </div>
     <div class="nav-items showmwnu hide">
-            <div><a href="index.html">Home</a></div>
-            <div><a href="index.html#link-courses">Course</a></div>
-            <div><a href="#link-home">Pages</a></div>
-            <div><a href="#link-home">Shop</a></div>
-            <div><a href="#link-home">Blog</a></div>
-            <div><a href="consult.html">Contact</a></div>
-            <div><a href="branding.html"><button class="mobile-login-button">Login/Register</button></a>
-            </div>
+      <div><a href="index.html">Home</a></div>
+      <div><a href="index.html#link-courses">Course</a></div>
+      <div><a href="#link-home">Pages</a></div>
+      <div><a href="#link-home">Shop</a></div>
+      <div><a href="#link-home">Blog</a></div>
+      <div><a href="consult.html">Contact</a></div>
+      <div><a href="branding.html"><button class="mobile-login-button">Login/Register</button></a>
+      </div>
 
 
     </div>
     <div class="search-cart-button showmenu hide">
-            <div><a href=""><img src="images/icons8-search-24.png" alt=""></a></div>
-            <div><a href=""><img src="images/icons8-cart-24.png"></a></div>
-            <div><a href="branding.html"><button class="login-button">Login/Register</button></a></div>
+      <div><a href=""><img src="images/icons8-search-24.png" alt=""></a></div>
+      <div><a href=""><img src="images/icons8-cart-24.png"></a></div>
+      <div><a href="branding.html"><button class="login-button">Login/Register</button></a></div>
     </div>
-    
-</header>
-<div>
+
+  </header>
+  <div>
     <button class="menu">
-            <div class="menuline"></div>
-            <div class="menuline"></div>
-            <div class="menuline"></div>
+      <div class="menuline"></div>
+      <div class="menuline"></div>
+      <div class="menuline"></div>
     </button>
-</div>
+  </div>
 
 
 
@@ -83,8 +84,12 @@
       </div>
       <div class="right-side">
         <div class="topic-text">Send us a message</div>
-        <p>If you have any types of quries related to our tutorial, you can send us message from here. It's our pleasure to help you.</p>
-      <form action="#">
+        <p>If you have any types of quries related to our tutorial, you can send us message from here. It's our pleasure
+          to help you.</p>
+
+
+
+        <!-- <form action="#">
         <div class="input-box">
           <input type="text" placeholder="Enter your name">
         </div>
@@ -95,10 +100,34 @@
           
         </div>
         <div class="button">
-          <input type="button" value="Send Now" >
-        </div>
-      </form>
-    </div>
+          <input type="button" value="Send Now" > -->
+
+
+
+
+
+        <form action="https://api.web3forms.com/submit" method="POST" >
+
+          <input type="hidden" name="access_key" value="227ce705-483d-42e4-afeb-540686c7645f">
+
+
+          <div class="input-box">
+            <input type="text" name="Name" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box message-box">
+            <input type="textarea" name="message" placeholder="Send Message" required>
+          </div>
+          <div class="button">
+            <input type="submit" value="Send Now">
+
+
+
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -124,7 +153,7 @@
 
 <script>
   document.querySelector(".menu").onclick = function () {
-          document.querySelector(".nav-items").classList.toggle("hide");
+    document.querySelector(".nav-items").classList.toggle("hide");
   }
 
 </script>
